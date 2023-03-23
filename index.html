@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="body">
+        <div class="left">
+            <div class="logowrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo">
+                    <rect width="200" height="200" fill="#ffffff" class="logo-white"/>
+                    <rect x="35" y="35" width="130" height="130" rx="10" fill="#000000" class="logo-black"/>
+                    <rect x="55" y="55" width="90" height="90" rx="10" fill="#ffffff" class="logo-white"/>
+                    <path d="M100,120 L85,100 L100,80 L115,100 Z" fill="#000000" class="logo-black"/>
+                    <path d="M120,100 Q120,80 135,70 Q150,60 165,60 Q180,60 190,70 Q200,80 200,100 Q200,120 190,130 Q180,140 165,140 Q150,140 135,130 Q120,120 120,100 Z M135,85 Q135,70 145,65 Q155,60 165,60 Q175,60 185,65 Q195,70 195,85 Q195,100 185,105 Q175,110 165,110 Q155,110 145,105 Q135,100 135,85 Z" fill="#ffffff" class="logo-white"/>
+                  </svg>
+                <h1>SQUEE</h1>
+            </div>
+            <div class="footer">
+                <p>
+                    Photo by <a href="https://unsplash.com/@dmosipenko">Dmitry Osipenko</a> on <a href="dmitry-osipenko-sHGMUBA88Mc-unsplash.jpg">Unsplash</a>
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <h2 class="headline">This is not a real online service! But because it looks so good, you know you want it in your life. Sign up <em>now</em> to get started.
+            </h2>
+            <form action="HOME" method="get" id="signup-form">
+                <h2>So let's do this!</h2>
+                <div class="container">
+                    <label for="first-name">First name:
+                        <input type="text" name="user-first" id="first-name" placeholder="First name" required pattern="[A-Za-z]*">
+                     </label>
+                    <label for="last_name">Last name:
+                        <input type="text" name="user-last" id="last-name" placeholder="Last name" required pattern="[A-Za-z]*">
+                    </label>
+                </div>
+        
+                <div class="container">
+                    <label for="email">Email
+                        <input type="email" name="user_mail" id="email" placeholder="email@email.com" required>
+                    </label>
+                    <label for="phone">Phone number
+                        <input type="tel" name="user_phone" id="phone" placeholder="(123)4567890">
+                    </label>
+                </div>
+                <div class="container">
+                    <label for="pwd">Password
+                        <input type="password" name="user_password" id="pwd" placeholder="Minimum 8 characters" required min="8">
+                    </label>
+                    <label for="cpwd">Confirm password
+                        <input type="password" name="user_password" id="cpwd" required>
+                    </label>
+                </div>
+            </form>
+            <div class="container2">
+                <button type="submit" form="signup-form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

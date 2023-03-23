@@ -1,0 +1,175 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    
+    --gray: rgb(0, 0, 0, 0.4);
+    --blue: rgb(0, 113, 143, 1);
+    --shadow: 0px 2px 4px var(--gray);
+}
+
+body {
+    margin: 0;
+}
+
+.body {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    position: relative;
+    flex: 1;
+    min-width: 350px;
+    height: 100vh;
+    background: no-repeat center 0px/100vh url("dmitry-osipenko-sHGMUBA88Mc-unsplash.jpg"), antiquewhite 200vh scroll;
+   
+}
+
+.logowrapper {
+    position: absolute;
+    top: 15vh;
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg.logo {
+    height: 12vh;
+    opacity: 0.8;
+    box-shadow: var(--shadow);
+}
+
+.logo-black{
+    fill: var(--gray);
+}
+
+.logo-white{
+    fill: antiquewhite;
+}
+
+h1 {
+    color: #faebd7;
+    letter-spacing: -4px;
+    font-size: 9vh;
+    text-shadow: var(--shadow)
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;    
+    width: 100%;
+}
+
+.footer p, .footer a {
+    font-size: 10px;
+    color: antiquewhite;
+    opacity: 0.7;
+}
+
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+h2.headline {
+    margin: 40px;
+    color: var(--gray);
+    text-shadow: 0 1px 2px;
+}
+
+form {
+    background-color: rgb(255, 255, 255, 0.7);
+    /* width: 640px; */
+    padding: 40px;
+    box-shadow: var(--shadow);
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+
+.container {
+    /* width: 600px; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+}
+
+label {
+    position: relative;
+    margin: 8px 0;
+    height: 40px;
+    width: 160px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+input {
+    position: absolute;
+    left: -2px;
+    appearance: none;
+    border: solid 1px var(--gray);
+    margin: 0;
+    padding: 5px;
+    width: 160px;
+    display: block;
+}
+
+input::placeholder {
+    text-transform: lowercase;
+}
+
+.container2 {
+    padding: 40px;
+}
+
+button {
+    font-family: inherit;
+    width: 160px;
+    margin: 0px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 350ms ease-in;
+    box-shadow: var(--shadow);
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.right a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 350ms;
+}
+
+a:hover {
+    opacity: 0.7;
+}
