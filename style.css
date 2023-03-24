@@ -18,13 +18,14 @@ body {
     flex-wrap: wrap;
 }
 
+/* LEFT SIDE */
+
 .left {
     position: relative;
     flex: 1;
     min-width: 350px;
     height: 100vh;
     background: no-repeat center 0px/100vh url("dmitry-osipenko-sHGMUBA88Mc-unsplash.jpg"), antiquewhite 200vh scroll;
-   
 }
 
 .logowrapper {
@@ -73,6 +74,7 @@ h1 {
     opacity: 0.7;
 }
 
+/* RIGHT SIDE */
 
 .right {
     flex: 2;
@@ -89,7 +91,6 @@ h2.headline {
 
 form {
     background-color: rgb(255, 255, 255, 0.7);
-    /* width: 640px; */
     padding: 40px;
     box-shadow: var(--shadow);
 }
@@ -141,6 +142,8 @@ input:not(:focus):not(:placeholder-shown):valid {
     background-color: rgb(0, 255, 0, 0.1);
 }
 
+/* CORRECTION MESSAGES */
+
 label p {
     position: absolute;
     bottom: -23px;
@@ -158,6 +161,8 @@ label p.correct {
 input::placeholder {
     text-transform: lowercase;
 }
+
+/* SUBMIT AND LOG IN */
 
 .container2 {
     padding: 40px;
