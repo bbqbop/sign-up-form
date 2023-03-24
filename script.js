@@ -1,7 +1,3 @@
-const pwd = document.querySelector("#pwd");
-const pwdConfirm = document.querySelector("#cpwd");
-const pwdLabel = document.querySelector('#pwd-label')
-
 const labels = document.querySelectorAll('label');
 const inputs = document.querySelectorAll('input');
 const submit = document.querySelector('button');
@@ -10,7 +6,7 @@ const submit = document.querySelector('button');
 for(i=0; i < inputs.length; i++){
     let input = inputs[i];
     let idx = i;
-    input.addEventListener('keydown', (e)=>{
+    input.addEventListener('change', ()=>{
         // confirm passwords:
         if(idx === 5){
             if(input.value != inputs[4].value){
@@ -43,3 +39,7 @@ function eraseCorrect(idx){
         labels[idx].lastChild.remove();
     }
 }
+
+// submit.addEventListener('submit', (event)=>{
+//     event.preventDefault()
+// })
