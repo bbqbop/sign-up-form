@@ -33,8 +33,8 @@
             <form action="HOME" method="get" id="signup-form">
                 <h2>So let's do this!</h2>
                 <div class="container">
-                    <label for="first-name" data-correct="Enter letters only">First name:
-                        <input type="text" name="user_first" id="first-name" placeholder="First name" required pattern="[A-Za-z]*" >
+                    <label for="first-name">First name:
+                        <input type="text" name="user_first" id="first-name" placeholder="First name" required pattern="[A-Za-z]*" data-correct="Enter letters only">
                      </label>
                     <label for="last-name">Last name:
                         <input type="text" name="user_last" id="last-name" placeholder="Last name" required pattern="[A-Za-z]*" data-correct="Enter letters only">
@@ -43,7 +43,7 @@
         
                 <div class="container">
                     <label for="email">Email
-                        <input type="email" name="user_mail" id="email" placeholder="email@email.com" required data-correct="Enter in email format: email@provider.com">
+                        <input type="email" name="user_mail" id="email" placeholder="email@email.com" required data-correct="Enter in email format">
                     </label>
                     <label for="phone">Phone number
                         <input type="tel" name="user_phone" id="phone" pattern="\d*" placeholder="(123)4567890" data-correct="Enter digits only">
