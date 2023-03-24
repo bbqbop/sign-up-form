@@ -8,13 +8,13 @@ for(i=0; i < inputs.length; i++){
     let idx = i;
     input.addEventListener('change', ()=>{
         // confirm passwords:
-        if(idx === 5){
-            if(input.value != inputs[4].value){
-                input.setCustomValidity("Invalid field.");
-                createCorrect(input, idx);
+        if(idx === 5 || idx === 4){
+            if(inputs[5].value != inputs[4].value){
+                inputs[5].setCustomValidity("Invalid field.");
+                createCorrect(inputs[5], 5);
             } else {
                 input.setCustomValidity("");
-                eraseCorrect(idx);
+                eraseCorrect(5);
             }
         }
         // validate other inputs:
