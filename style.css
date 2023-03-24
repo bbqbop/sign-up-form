@@ -85,7 +85,6 @@ h1 {
 h2.headline {
     margin: 40px;
     color: var(--gray);
-    text-shadow: 0 1px 2px;
 }
 
 form {
@@ -102,10 +101,9 @@ form h2 {
 }
 
 .container {
-    /* width: 600px; */
     display: flex;
     justify-content: flex-start;
-    gap: 45px;
+    gap: 50px;
 }
 
 label {
@@ -128,6 +126,27 @@ input {
     padding: 5px;
     width: 160px;
     display: block;
+    transition: all 350ms ease-in;
+}
+
+input:focus {
+    background-color: rgb(0,0,0,0.1);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgb(255, 0, 0, 0.1);
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgb(0, 255, 0, 0.1);
+}
+
+label p.correct {
+    position: absolute;
+    bottom: -23px;
+    right: -10px;
+    font-size: 10px;
+    color: rgb(255, 0, 0, 0.7);
 }
 
 input::placeholder {

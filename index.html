@@ -33,33 +33,33 @@
             <form action="HOME" method="get" id="signup-form">
                 <h2>So let's do this!</h2>
                 <div class="container">
-                    <label for="first-name">First name:
-                        <input type="text" name="user-first" id="first-name" placeholder="First name" required pattern="[A-Za-z]*">
+                    <label for="first-name" data-correct="Enter letters only">First name:
+                        <input type="text" name="user_first" id="first-name" placeholder="First name" required pattern="[A-Za-z]*" >
                      </label>
-                    <label for="last_name">Last name:
-                        <input type="text" name="user-last" id="last-name" placeholder="Last name" required pattern="[A-Za-z]*">
+                    <label for="last-name">Last name:
+                        <input type="text" name="user_last" id="last-name" placeholder="Last name" required pattern="[A-Za-z]*" data-correct="Enter letters only">
                     </label>
                 </div>
         
                 <div class="container">
                     <label for="email">Email
-                        <input type="email" name="user_mail" id="email" placeholder="email@email.com" required>
+                        <input type="email" name="user_mail" id="email" placeholder="email@email.com" required data-correct="Enter in email format: email@provider.com">
                     </label>
                     <label for="phone">Phone number
-                        <input type="tel" name="user_phone" id="phone" placeholder="(123)4567890">
+                        <input type="tel" name="user_phone" id="phone" pattern="\d*" placeholder="(123)4567890" data-correct="Enter digits only">
                     </label>
                 </div>
                 <div class="container">
                     <label for="pwd">Password
-                        <input type="password" name="user_password" id="pwd" placeholder="Minimum 8 characters" required min="8">
+                        <input type="password" name="user_password" id="pwd" placeholder="Minimum 8 characters" required minlength="8" data-correct="Enter minimum 8 characters">
                     </label>
-                    <label for="cpwd">Confirm password
-                        <input type="password" name="user_password" id="cpwd" required>
+                    <label for="cpwd" class="pwd-label">Confirm password
+                        <input type="password" name="user_password" id="cpwd" placeholder="Confirm Password" required data-correct="Passwords don't match">
                     </label>
                 </div>
             </form>
             <div class="container2">
-                <button type="submit" form="signup-form">Create Account</button>
+                <button type="button" form="signup-form">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
